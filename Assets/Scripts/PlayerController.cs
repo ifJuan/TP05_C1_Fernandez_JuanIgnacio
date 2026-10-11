@@ -22,6 +22,11 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsRunning", true);
         }
 
+        if (Input.GetKeyUp(KeyCode.F)) // SOLO PARA PROBAR CAERSE
+        {
+            animator.SetBool("DidFall", true);
+        }
+
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && isGround)
         {
             isGround = false;
